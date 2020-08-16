@@ -1,0 +1,238 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SirHumphrey</title><meta name="description" content="任世人呼之为败子，为废物，为顽民，为瞌睡汉，为死老魅也已矣"><meta name="keywords" content="雨中黄叶树，灯下白头人"><meta name="author" content="SirHumphrey"><meta name="copyright" content="SirHumphrey"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="http://p.ananas.chaoxing.com/star3/origin/d2b045206a6583b2bdf1da524ca2f65c.jpg?rw=303&rh=303&_fileSize=17164&_orientation=1"><link rel="canonical" href="https://blog.huangtao.xyz/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="website"><meta property="og:title" content="SirHumphrey"><meta property="og:url" content="https://blog.huangtao.xyz/"><meta property="og:site_name" content="SirHumphrey"><meta property="og:description" content="任世人呼之为败子，为废物，为顽民，为瞌睡汉，为死老魅也已矣"><meta property="og:image" content="http://p.ananas.chaoxing.com/star3/origin/d2b045206a6583b2bdf1da524ca2f65c.jpg?rw=303&amp;rh=303&amp;_fileSize=17164&amp;_orientation=1"><meta property="article:published_time" content="2020-08-16T06:50:52.536Z"><meta property="article:modified_time" content="2020-08-16T06:50:52.536Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  hexoversion: '5.0.2',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: {"text":"I,LOVE,YOU,读书,思考,编码,健身,lmy","fontSize":"15px"},
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isanchor: true    
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isSidebar: false,
+  postUpdate: '2020-08-16 14:50:52'
+}</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript><meta name="generator" content="Hexo 5.0.2"></head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="http://p.ananas.chaoxing.com/star3/origin/d2b045206a6583b2bdf1da524ca2f65c.jpg?rw=303&amp;rh=303&amp;_fileSize=17164&amp;_orientation=1" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">4</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">7</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">4</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div></div></div><div id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(http://p.ananas.chaoxing.com/star3/origin/026774d874b59bd263e910ebb5a36fa4.jpg?rw=2560&amp;rh=1600&amp;_fileSize=564633&amp;_orientation=1)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">SirHumphrey</a></span><span class="pull-right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="site-info"><h1 id="site_title">SirHumphrey</h1><div id="site_subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/LordHumphrey" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:wuchaoyang1080@gmail.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://t.me/LordHumphreyAppleby" rel="external nofollow noreferrer" target="_blank" title="Telegram"><i class="fab fa-telegram-plane"></i></a></div></div><div id="scroll_down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout_page" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/08/16/JVM/" title="JVM学习笔记（更新中）">     <img class="post_bg" data-lazy-src="http://p.ananas.chaoxing.com/star3/origin/1b8e7a3fdc262ba39f61cf5e7a733678.jpg?rw=2560&amp;rh=1600&amp;_fileSize=240989&amp;_orientation=1" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JVM学习笔记（更新中）"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/08/16/JVM/" title="JVM学习笔记（更新中）">JVM学习笔记（更新中）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-08-16T06:50:29.285Z" title="发表于 2020-08-16 14:50:29">2020-08-16</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-08-16T06:50:29.285Z" title="更新于 2020-08-16 14:50:29">2020-08-16</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/JVM/">JVM</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/Java/">Java</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/JVM/">JVM</a></span></div><div class="content">JVM堆
+堆的核心概述
+一个JVM实例只存在一个堆内存，堆也是Java内存管理的核心区域
+
+Java堆区在JVM启动的时候即被创建，其大小也就确定了，是JVM管理的最大一块内存空间，堆内存大小可调
+
+堆可以处于物理上不连续的内存空间中，但在逻辑上它应该被视为连续的
+
+所有的线程共享Java堆，在这里还可以划分线程私有的缓冲区（Thread Local Allocation Buffer，TLAB）
+
+所有的对象实例以及数组都应当在运行时分配在堆上
+
+数组和对象可能永远不会储存在栈上，因为栈帧中保存引用，这个引用指向对象或者数组在堆中的位置
+
+在方法结束后，堆中的对象不会被马上移除，仅仅在垃圾回收阶段才会被移除
+
+堆是GC的重点区域
+
+堆内存划分
+新生区+养老区+元空间
+
+
+
+设置堆的内存大小和OOM
+-Xms设置堆区起始内存（年轻代+老年代）等价于 -XX:InitialHeapSize
+-Xmx设置堆区的最大内存，等价于 -XX:MaxHeapSize
+设置-Xms和-Xmx目的在于java垃圾回收机制清理完堆区后不需要重新分隔计算堆区的大小，从而提高性能
+最大和初始建议设置相等
+
+ ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/08/16/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="第一篇博客">     <img class="post_bg" data-lazy-src="http://p.ananas.chaoxing.com/star3/origin/5c12b29ce96e79c5cfd7ac303d18e6d4.jpg?rw=5120&amp;rh=2880&amp;_fileSize=2596442&amp;_orientation=1" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="第一篇博客"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/08/16/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="第一篇博客">第一篇博客</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-08-16T06:50:29.285Z" title="发表于 2020-08-16 14:50:29">2020-08-16</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-08-16T06:50:29.285Z" title="更新于 2020-08-16 14:50:29">2020-08-16</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E6%97%A5%E8%AE%B0%EF%BC%88%E4%BC%AA%EF%BC%89/">日记（伪）</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/">碎碎念</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/%E6%97%A5%E8%AE%B0%EF%BC%88%E4%BC%AA%EF%BC%89/">日记（伪）</a></span></div><div class="content">序
+我也整了个博客，断断续续的花了几天时间，这玩意适合用来打发时间…
+
+说明
+为什么叫SirHumphrey？
+起个名字过于困难，我的常用网名经常看又觉得索然无味，汉弗莱爵士是一个不错的选择
+
+
+以后会不会更新？
+好问题，算算我的快乐时光依然不多，再过几个月行将加入考研大军
+
+
+文章内容包括什么？
+或许是Java和一些奇怪的东西
+
+
+头像是个啥？
+头像是Spring框架，目前一直在看的东西
+
+
+
+</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/08/16/%E7%AE%A1%E7%AA%A5Java%E5%BC%80%E5%8F%91%E8%80%85%E7%9A%84WSL2%E8%B0%83%E6%95%99%E8%AE%A1%E5%88%92/" title="管窥Java开发者的WSL2调教计划">     <img class="post_bg" data-lazy-src="http://p.ananas.chaoxing.com/star3/origin/84f9a12f1e26f21dd70660237f13df1b.jpg?rw=2560&amp;rh=1600&amp;_fileSize=422721&amp;_orientation=1" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="管窥Java开发者的WSL2调教计划"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/08/16/%E7%AE%A1%E7%AA%A5Java%E5%BC%80%E5%8F%91%E8%80%85%E7%9A%84WSL2%E8%B0%83%E6%95%99%E8%AE%A1%E5%88%92/" title="管窥Java开发者的WSL2调教计划">管窥Java开发者的WSL2调教计划</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-08-16T06:50:29.285Z" title="发表于 2020-08-16 14:50:29">2020-08-16</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-08-16T06:50:29.285Z" title="更新于 2020-08-16 14:50:29">2020-08-16</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/WSL2/">WSL2</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/WSL2/">WSL2</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/Docker/">Docker</a></span></div><div class="content">心心念念的WSL2终于在早些时候正式推送，作为一个代码写的不咋地，喜欢瞎折腾的大垃圾，不由得尝鲜一把WSL2，这玩意结合Docker简直是生产力工具~
+安装WSL2略
+安装Docker Desktop略
+简单配置Docker Desktop
+镜像
+这里我用的是阿里的镜像源
+
+
+Docker Desktop设置
+
+
+
+
+
+MySQL安装
+拉取镜像在此不表
+启动MySQL容器
+docker run --name MySQL_Docker -p 3306:3306 -v /mnt/f/*/*/*/MySQL_Docker:/var/lib/mysql -e MYSQL_ROOT_PASSWORD= -d mysql
+
+
+命令简单解释
+官方文档
+-p 指定容器内部端口和映射的端口，其中-P是随机端口（好像没人会这么干吧…）
+-v 挂载数据，我这里是挂载到了本地F的某个目录下，因为WSL2这玩意其实会把windows磁盘默认挂载，但是魔幻的是他的写入有延迟，也就是说你可能这边已经泡起来了，但是目标目录还是空的，不要慌，等等就行了
+MYSQL_ROOT_PASSWORD=这里是你的root用户密码 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/08/16/%E9%82%A3%E4%BA%9BCS%E8%AF%BE%E7%A8%8B%E4%B8%8A%E4%B8%8D%E4%BC%9A%E6%95%99%E7%9A%84%E7%9F%A5%E8%AF%86/" title="协会新生的第一节课（更新中）">     <img class="post_bg" data-lazy-src="http://p.ananas.chaoxing.com/star3/origin/f027daa24bec67e4b458f485c0d87306.jpg?rw=2560&amp;rh=1600&amp;_fileSize=312114&amp;_orientation=1" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="协会新生的第一节课（更新中）"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/08/16/%E9%82%A3%E4%BA%9BCS%E8%AF%BE%E7%A8%8B%E4%B8%8A%E4%B8%8D%E4%BC%9A%E6%95%99%E7%9A%84%E7%9F%A5%E8%AF%86/" title="协会新生的第一节课（更新中）">协会新生的第一节课（更新中）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-08-16T06:50:29.285Z" title="发表于 2020-08-16 14:50:29">2020-08-16</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-08-16T06:50:29.285Z" title="更新于 2020-08-16 14:50:29">2020-08-16</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E8%AE%B2%E7%A8%BF/">讲稿</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/">碎碎念</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/%E8%AE%B2%E7%A8%BF/">讲稿</a></span></div><div class="content">序
+写这篇文章的本意是用于协会招新培训，和新生交流一些有所裨益而在现行CS教学体系中又贫乏的内容
+
+具体包括哪些内容？
+
+编码
+乱码是每个程序员都会遇到的神奇问题
+
+计算机简史
+或许是故事会吧
+
+计算机名言
+
+C语言
+
+编码习惯
+
+生产力
+
+MIT计算机教育中缺失的一课
+
+
+
+
+编码略
+简史略
+名言
+All problems in computer science can be solved by another level of indirection.(David John Wheeler)
+分层思想
+所有兼容问题都可以通过加一层抽象解决，所有性能问题都可以通过去掉一层抽象解决
+
+
+取舍
+时间换空间
+
+内聚耦合
+代码可维护性
+分层：可以将整体复杂度分解到每个层中，使得每个层的复杂度相比以前的整体复杂度要低。解耦：可以将问题和风险封锁在一个模块内，提升解决问题的效率，降低风险的影响范围。
+
+To iterate is human, to recurse, divine. - L. Peter Deutsch
+
+Allocate four digits for the year par ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" data-lazy-src="http://p.ananas.chaoxing.com/star3/origin/d2b045206a6583b2bdf1da524ca2f65c.jpg?rw=303&amp;rh=303&amp;_fileSize=17164&amp;_orientation=1" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">SirHumphrey</div><div class="author-info__description">任世人呼之为败子，为废物，为顽民，为瞌睡汉，为死老魅也已矣</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives"><div class="headline">文章</div><div class="length_num">4</div></a></div><div class="card-info-data-item is-center">      <a href="/tags"><div class="headline">标签</div><div class="length_num">7</div></a></div><div class="card-info-data-item is-center"><a href="/categories"><div class="headline">分类</div><div class="length_num">4</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/LordHumphrey"><i class="fab fa-github"></i><span>Github</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/LordHumphrey" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:wuchaoyang1080@gmail.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://t.me/LordHumphreyAppleby" rel="external nofollow noreferrer" target="_blank" title="Telegram"><i class="fab fa-telegram-plane"></i></a></div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-recent-item"><div class="aside-recent-post"><a class="aside-post-cover" href="/2020/08/16/JVM/" title="JVM学习笔记（更新中）"><img class="aside-post-bg" data-lazy-src="http://p.ananas.chaoxing.com/star3/origin/1b8e7a3fdc262ba39f61cf5e7a733678.jpg?rw=2560&amp;rh=1600&amp;_fileSize=240989&amp;_orientation=1" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JVM学习笔记（更新中）"/></a><div class="aside-post-info"><a class="aside-post-title" href="/2020/08/16/JVM/" title="JVM学习笔记（更新中）">JVM学习笔记（更新中）</a><time class="aside-post_meta post-meta-date" datetime="2020-08-16T06:50:29.285Z" title="发表于 2020-08-16 14:50:29">2020-08-16</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/2020/08/16/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="第一篇博客"><img class="aside-post-bg" data-lazy-src="http://p.ananas.chaoxing.com/star3/origin/5c12b29ce96e79c5cfd7ac303d18e6d4.jpg?rw=5120&amp;rh=2880&amp;_fileSize=2596442&amp;_orientation=1" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="第一篇博客"/></a><div class="aside-post-info"><a class="aside-post-title" href="/2020/08/16/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="第一篇博客">第一篇博客</a><time class="aside-post_meta post-meta-date" datetime="2020-08-16T06:50:29.285Z" title="发表于 2020-08-16 14:50:29">2020-08-16</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/2020/08/16/%E7%AE%A1%E7%AA%A5Java%E5%BC%80%E5%8F%91%E8%80%85%E7%9A%84WSL2%E8%B0%83%E6%95%99%E8%AE%A1%E5%88%92/" title="管窥Java开发者的WSL2调教计划"><img class="aside-post-bg" data-lazy-src="http://p.ananas.chaoxing.com/star3/origin/84f9a12f1e26f21dd70660237f13df1b.jpg?rw=2560&amp;rh=1600&amp;_fileSize=422721&amp;_orientation=1" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="管窥Java开发者的WSL2调教计划"/></a><div class="aside-post-info"><a class="aside-post-title" href="/2020/08/16/%E7%AE%A1%E7%AA%A5Java%E5%BC%80%E5%8F%91%E8%80%85%E7%9A%84WSL2%E8%B0%83%E6%95%99%E8%AE%A1%E5%88%92/" title="管窥Java开发者的WSL2调教计划">管窥Java开发者的WSL2调教计划</a><time class="aside-post_meta post-meta-date" datetime="2020-08-16T06:50:29.285Z" title="发表于 2020-08-16 14:50:29">2020-08-16</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/2020/08/16/%E9%82%A3%E4%BA%9BCS%E8%AF%BE%E7%A8%8B%E4%B8%8A%E4%B8%8D%E4%BC%9A%E6%95%99%E7%9A%84%E7%9F%A5%E8%AF%86/" title="协会新生的第一节课（更新中）"><img class="aside-post-bg" data-lazy-src="http://p.ananas.chaoxing.com/star3/origin/f027daa24bec67e4b458f485c0d87306.jpg?rw=2560&amp;rh=1600&amp;_fileSize=312114&amp;_orientation=1" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="协会新生的第一节课（更新中）"/></a><div class="aside-post-info"><a class="aside-post-title" href="/2020/08/16/%E9%82%A3%E4%BA%9BCS%E8%AF%BE%E7%A8%8B%E4%B8%8A%E4%B8%8D%E4%BC%9A%E6%95%99%E7%9A%84%E7%9F%A5%E8%AF%86/" title="协会新生的第一节课（更新中）">协会新生的第一节课（更新中）</a><time class="aside-post_meta post-meta-date" datetime="2020-08-16T06:50:29.285Z" title="发表于 2020-08-16 14:50:29">2020-08-16</time></div></div></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div><ul class="card-category-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/JVM/"><span class="card-category-list-name">JVM</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/WSL2/"><span class="card-category-list-name">WSL2</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%97%A5%E8%AE%B0%EF%BC%88%E4%BC%AA%EF%BC%89/"><span class="card-category-list-name">日记（伪）</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E8%AE%B2%E7%A8%BF/"><span class="card-category-list-name">讲稿</span><span class="card-category-list-count">1</span></a></li>
+                       
+            </ul></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Docker/" style="font-size: 16px; color: #999">Docker</a> <a href="/tags/JVM/" style="font-size: 16px; color: #999">JVM</a> <a href="/tags/Java/" style="font-size: 16px; color: #999">Java</a> <a href="/tags/WSL2/" style="font-size: 16px; color: #999">WSL2</a> <a href="/tags/%E6%97%A5%E8%AE%B0%EF%BC%88%E4%BC%AA%EF%BC%89/" style="font-size: 16px; color: #999">日记（伪）</a> <a href="/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/" style="font-size: 22px; color: #99a9bf">碎碎念</a> <a href="/tags/%E8%AE%B2%E7%A8%BF/" style="font-size: 16px; color: #999">讲稿</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/08/"><span class="card-archive-list-date">八月 2020</span><span class="card-archive-list-count">4</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="webinfo-article-name">文章数目 :</div><div class="webinfo-article-count">4</div></div><div class="webinfo-item"><div class="webinfo-runtime-name">已运行时间 :</div><div class="webinfo-runtime-count" id="webinfo-runtime-count" publish_date="2020/8/14 23:00:00">     </div></div><div class="webinfo-item">      <div class="webinfo-site-uv-name">本站访客数 :</div><div class="webinfo-site-uv-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="webinfo-site-name">本站总访问量 :</div><div class="webinfo-site-pv-count" id="busuanzi_value_site_pv"></div></div></div></div></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By SirHumphrey</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><div class="js-pjax"><script>function subtitleType () {
+  if (true) { 
+    var typed = new Typed("#subtitle", {
+      strings: "雨中黄叶树，灯下白头人,欲进余以千秋之业，岂料余之一事无成也哉,桃李春风一杯酒，江湖夜雨十年灯,妆罢低声问夫婿 画眉深浅入时无,可怜无定河边骨，犹是春闺梦里人,尔来二十有一年矣".split(","),
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50
+    })
+  } else {
+    document.getElementById("subtitle").innerHTML = '雨中黄叶树，灯下白头人'
+  }
+}
+
+if (true) {
+  if (typeof Typed === 'function') subtitleType()
+  else $.getScript('https://cdn.jsdelivr.net/npm/typed.js', subtitleType)
+} else {
+  subtitleType()
+}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/js/third-party/ClickShowText.js" async="async"></script></div></body></html>
